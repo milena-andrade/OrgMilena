@@ -1,0 +1,16 @@
+<template>
+<lightning-card title="elementos de renderização condicional" icon-name="utility:user">
+    <div class="slds-var-m-around_medium">
+        Hello, {myValue}!
+    </div>
+    <div style="padding:10px">
+        <lightning-input type="checkbox" label="Click me" onchange={handleChange}></lightning-input>
+        <template if:true={showMe}>
+            Conseguir deixar Visivel
+        </template>
+        <template if:false={showMe}>
+            Conseguir fazer desaparecer
+        </template>
+    </div>
+</lightning-card>
+</template>

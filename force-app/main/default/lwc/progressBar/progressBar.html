@@ -1,0 +1,15 @@
+<template>
+
+    <lightning-card title={Name} icon-name="custom:custom18" size="small">
+    <lightning-input type="text" onchange={handleTargetChangelabel} label="Target Field"></lightning-input>
+    <lightning-input type="text" onchange={handleProgressChange} label="Progress Field"></lightning-input>
+    <div class="slds-p-around--medium">
+        <div class="slds-col slds-size_9-of-12 slds-m-bottom--medium">
+            <lightning-progress-bar value={progress}></lightning-progress-bar>
+        </div>
+        <div class="slds-col slds-size_9-of-12 slds-text-align_center slds-m-top_large">
+        </div>
+    </div>
+    </lightning-card>
+
+</template>

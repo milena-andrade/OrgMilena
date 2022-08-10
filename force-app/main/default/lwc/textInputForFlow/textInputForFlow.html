@@ -1,0 +1,13 @@
+<template>
+    <lightning-input
+      name={field}
+      label={fieldName}
+      onchange={handleChange}
+    ></lightning-input>
+    <template if:true={isErrorMessage}>
+      <span class="slds-text-color_error">{errorMessage}</span>
+      <div slot="footer">
+        <lightning-badge label={result}></lightning-badge>
+    </div>
+    </template>
+  </template>
